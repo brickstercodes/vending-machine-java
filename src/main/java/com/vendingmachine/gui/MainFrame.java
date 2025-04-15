@@ -16,7 +16,7 @@ public class MainFrame extends JFrame {
 
         // Initialize panels
         productPanel = new ProductPanel();
-        transactionPanel = new TransactionPanel();
+        transactionPanel = new TransactionPanel(productPanel);
 
         // Connect the panels
         productPanel.setTransactionPanel(transactionPanel);

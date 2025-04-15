@@ -9,8 +9,10 @@ public class TransactionPanel extends JPanel {
     private JTextField amountField;
     private JButton payButton;
     private double currentAmount = 0.0;
+    private ProductPanel prod;
 
-    public TransactionPanel() {
+    public TransactionPanel(ProductPanel p) {
+        this.prod = p;
         setLayout(new BorderLayout(10, 10));
         setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
@@ -60,9 +62,16 @@ public class TransactionPanel extends JPanel {
                         "Success",
                         JOptionPane.INFORMATION_MESSAGE);
                 resetTransaction();
-            } else {
+                prod.clearCart();
+            } else if (paidAmount < 0) {
                 JOptionPane.showMessageDialog(this,
-                        String.format("Insufficient amount. Please pay $%.2f", currentAmount),
+                        String.format("Negative money not allowed."),
+                        "Error",
+                        JOptionPane.ERROR_MESSAGE);
+            } else {
+                double extra = currentAmount - paidAmount;
+                JOptionPane.showMessageDialog(this,
+                        String.format("Insufficient amount. Please pay more $%.2f", extra),
                         "Error",
                         JOptionPane.ERROR_MESSAGE);
             }

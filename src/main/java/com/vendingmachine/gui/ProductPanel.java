@@ -96,7 +96,7 @@ public class ProductPanel extends JPanel {
         propertyChangeSupport.firePropertyChange("cartUpdated", null, cartItems);
     }
 
-    private void clearCart() {
+    public void clearCart() {
         cartItems.clear();
         cartModel.clear();
         updateTransactionPanel();
