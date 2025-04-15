@@ -1,0 +1,13 @@
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/models/Beverage.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/Main.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/gui/ProductPanel.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/interfaces/VendingOperations.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/models/Snack.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/gui/TransactionPanel.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/interfaces/Payment.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/models/CartItem.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/utils/CollectionManager.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/gui/MainFrame.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/models/Transaction.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/exceptions/InsufficientFundsException.java
+/Users/anugrahshetty/Desktop/vending-machine/src/main/java/com/vendingmachine/models/AbstractProduct.java
